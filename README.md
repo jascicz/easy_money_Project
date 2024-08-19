@@ -21,17 +21,17 @@ Tras 4 años de actividad, easyMoney se enfrenta a algunos retos que ponen en ri
 
 La tareas principales que debe desarrollar Bob son las siguientes:
 
-- **Tarea 1. Análisis** Se implementa un autoservicio de BI para todo el equipo donde poder visualizar la cantidad de productos vendidos, qué clientes contratan más productos, cantidad de clientes nuevos, cuántos se han dado de baja, entre otros.
+- **1. Análisis** Se implementa un autoservicio de BI para todo el equipo donde poder visualizar la cantidad de productos vendidos, qué clientes contratan más productos, cantidad de clientes nuevos, cuántos se han dado de baja, entre otros.
 
-- [**Tarea 2. Segmentación**](./tarea2_Segmentacion/tarea2-segmentacion.ipynb) En esta tarea se realiza una segmentación de nuestra cartera de clientes con el fin de poder orientar nuestra actividad comercial. Los diferentes clusters pueden visualizarse en el siguiente [link](http://carlosperez1697.pythonanywhere.com/segmentacion).
+- [**2. Segmentación**](./tarea2_Segmentacion/tarea2-segmentacion.ipynb) En esta tarea se realiza una segmentación de nuestra cartera de clientes con el fin de poder orientar nuestra actividad comercial. Los diferentes clusters pueden visualizarse en el siguiente [link](http://carlosperez1697.pythonanywhere.com/segmentacion).
 
-- [**Tarea 3. Recomendación**](./tarea3_Recomendacion/tarea3-recomendaci-n.ipynb) En esta tarea se realiza recomendaciones de productos a 10.000 clientes para ello primero se realizan las recomendaciones y después se pasan por un [Modelo de Compra](./tarea3_Recomendacion/tarea3-modelo-compra.ipynb) para escoger que recomendaciones tendrán más probabilidad de éxito y mayor beneficio ofrecen a la compañía. 
+- [**3. Recomendación**](./tarea3_Recomendacion/tarea3-recomendaci-n.ipynb) En esta tarea se realiza recomendaciones de productos a 10.000 clientes para ello primero se realizan las recomendaciones y después se pasan por un [Modelo de Compra](./tarea3_Recomendacion/tarea3-modelo-compra.ipynb) para escoger que recomendaciones tendrán más probabilidad de éxito y mayor beneficio ofrecen a la compañía. 
     
     En esta tarea también se tiene en cuenta los [Requerimientos de la plataforma de productivización](./tarea3_Recomendacion/tarea3-produccion-specs.ipynb) para poder operar los modelos desarrollados en este proyecto. 
 
-- [**Tarea 4. Personalización**](./tarea4_Personalizacion/tarea4-personalizacion.ipynb) En esta tarea se realiza una segmentación de los 10.000 emails que resultan de la tarea 3. El objetivo es obtener 4 o 5 creatividades distintas correspondientes a diferentes perfiles en función del perfil de los clientes, según edad, sexo, ingresos, etc.
+- [**4. Personalización**](./tarea4_Personalizacion/tarea4-personalizacion.ipynb) En esta tarea se realiza una segmentación de los 10.000 emails que resultan de la tarea 3. El objetivo es obtener 4 o 5 creatividades distintas correspondientes a diferentes perfiles en función del perfil de los clientes, según edad, sexo, ingresos, etc.
 
-- [**Tarea 5. Seguimiento**](./tarea5_Seguimiento/tarea5-seguimiento.ipynb) En esta tarea se definen una serie de KPIs para hacer seguimiento de la campaña.
+- [**5. Seguimiento**](./tarea5_Seguimiento/tarea5-seguimiento.ipynb) En esta tarea se definen una serie de KPIs para hacer seguimiento de la campaña.
 
-- [**Tarea 6. Coordinación**](./tarea6_Coordinacion/tarea6-coordinaci-n.ipynb) En esta tarea, se determina el proceso de coordinación y validación de los cambios y mejoras que se implementen en los modelos opertativos como en el dashboard. 
+- [**6. Coordinación**](./tarea6_Coordinacion/tarea6-coordinaci-n.ipynb) En esta tarea, se determina el proceso de coordinación y validación de los cambios y mejoras que se implementen en los modelos opertativos como en el dashboard. 
 
