@@ -1,4 +1,6 @@
-# Proyecto easyMoney. Proyecto Final del Máster de Data Science
+#                                                                 Proyecto easyMoney. 
+
+                                Proyecto Final del Máster de Data Science
 **Desarrollado por:** [David Cembranos](https://github.com/carlonsk), [Adrian Nora](https://github.com/Harry3lsucio) y [Javier Alfonso](https://github.com/jascicz)
 
 <img src="https://nuclio.school/wp-content/uploads/2019/10/nucleoDS-newBlack.png" alt="Nuclio Digital School" style="width: 400px; height: 116px; margin: 43.4px 0px;" />
