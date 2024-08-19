@@ -1,20 +1,25 @@
-# Proyecto easyMoney
+# Proyecto easyMoney. Proyecto Final del Máster de Data Science
 **Desarrollado por:** [David Cembranos](https://github.com/carlonsk), [Adrian Nora](https://github.com/Harry3lsucio) y [Javier Alfonso](https://github.com/jascicz)
 
 <img src="https://nuclio.school/wp-content/uploads/2019/10/nucleoDS-newBlack.png" alt="Nuclio Digital School" style="width: 400px; height: 116px; margin: 43.4px 0px;" />
 
 <img src="LOGO_EasyMoney.jpg" alt="Nuclio Digital School" style="width: 400px; height: 116px; margin: 43.4px 0px;" />
 
-<h1 style="text-align: center;">Proyecto easyMoney</h1>
+<h1 style="text-align: center;">
+    Proyecto easyMoney
+</h1>
 
-**Desarrollado por:** [David Cembranos](https://github.com/carlonsk), [Adrian Nora](https://github.com/Harry3lsucio) y [Javier Alfonso](https://github.com/jascicz)
+
 
 <div style="display: flex; justify-content: center;">
     <img src="https://nuclio.school/wp-content/uploads/2019/10/nucleoDS-newBlack.png" alt="Nuclio Digital School" style="width: 400px; height: 116px; margin: 20px;" />
-    <img src="LOGO_EasyMoney.jpg" alt="EasyMoney" style="width: 400px; height: 116px; margin: 20px;" />
+    
+    <img src="LOGO_EasyMoney.jpg" style="width: 400px; height: 116px; margin: 20px;" />
 </div>
 
-Proyecto Final del Máster de Data Science
+**Desarrollado por:** [David Cembranos](https://github.com/carlonsk), [Adrian Nora](https://github.com/Harry3lsucio) y [Javier Alfonso](https://github.com/jascicz)
+
+
 
 El proyecto final corresponde a un roleplay de Data Science donde durante 4 meses nos meteremos en la piel de Bob para trabajar como Data Scientist en una compañía comercializadora de productos financieros. Este proyecto simila un escenario cercano a la realidad de la profesión, en el que los requerimientos están poco (o nada) definidos, y debemos hacer uso de nuestra creatividad para proporcionar soluciones en un área de marketing analítico y desarrollo de negocio desde la analítica avanzada. 
 
