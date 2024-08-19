@@ -21,7 +21,7 @@ Tras 4 años de actividad, easyMoney se enfrenta a algunos retos que ponen en ri
 
 La tareas principales que debe desarrollar Bob son las siguientes:
 
-- [**Tarea 1. Análisis**](./tarea1_Analisis/) En esta tarea se desarrolla un autoservicio de BI para todo el equipo donde poder visualizar altas, bajas, información de los clientes... Haz clic en el [Dashboard](http://carlosperez1697.pythonanywhere.com/analisis) para ver el resultado.
+- **Tarea 1. Análisis** Se implementa un autoservicio de BI para todo el equipo donde poder visualizar la cantidad de productos vendidos, qué clientes contratan más productos, cantidad de clientes nuevos, cuántos se han dado de baja, entre otros.
 
 - [**Tarea 2. Segmentación**](./tarea2_Segmentacion/tarea2-segmentacion.ipynb) En esta tarea se realiza una segmentación de nuestra cartera de clientes con el fin de poder orientar nuestra actividad comercial. Los diferentes clusters pueden visualizarse en el siguiente [link](http://carlosperez1697.pythonanywhere.com/segmentacion).
 
