@@ -11,7 +11,7 @@
 
 **Desarrollado por:** [David Cembranos](https://github.com/carlonsk), [Adrian Nora](https://github.com/Harry3lsucio) y [Javier Alfonso](https://github.com/jascicz)
 
-
+------
 
 El proyecto final corresponde a un roleplay de Data Science donde durante 4 meses nos meteremos en la piel de Bob para trabajar como Data Scientist en una compañía comercializadora de productos financieros. Este proyecto simila un escenario cercano a la realidad de la profesión, en el que los requerimientos están poco (o nada) definidos, y debemos hacer uso de nuestra creatividad para proporcionar soluciones en un área de marketing analítico y desarrollo de negocio desde la analítica avanzada. 
 
