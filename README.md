@@ -17,7 +17,7 @@ Durante 4 meses nos meteremos en la piel de Bob para trabajar como Data Scientis
 
 La empresa easyMoney nació hace más de 4 años de la imaginación de Carol Denver, una profesional consolidada de la banca de inversión que tras más de 10 años trabajando para grandes firmas decidió lanzar su propio proyecto empresarial: una plataforma multi-canal de comercialización de productos financieros (ahorro, inversión, financiación) con una interfaz amigable en la que los clientes pudiesen encontrar soluciones a sus necesidades financieras y contratarlas de manera sencilla. 
 
-Tras 4 años de actividad, easyMoney se enfrenta a algunos retos que ponen en riesgo su continuidad. En este contexto, y tras la salida de uno de los miembros del equipo de Marketing destinado a la captación, la dirección de easyMoney ha decidido cubrir esa vacante con la incorporación de un Data Scientist, que le ayude en esta nueva etapa a obtener una mejor rentabilidad de la cartera actual de clientes.
+En los últimos años de actividad, easyMoney se enfrenta a algunos retos que ponen en riesgo su continuidad. En este contexto, y tras la salida de uno de los miembros del equipo de Marketing destinado a la captación, la dirección de easyMoney ha decidido cubrir esa vacante con la incorporación de un Data Scientist, que le ayude en esta nueva etapa a obtener una mejor rentabilidad de la cartera actual de clientes.
 
 La tareas principales que debe desarrollar Bob son las siguientes:
 
