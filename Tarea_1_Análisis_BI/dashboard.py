@@ -32,7 +32,7 @@ else:
 
     # Barra lateral de navegación
     st.sidebar.title("DASHBOARD")
-    st.sidebar.image("/Users/claudiacastro/easy_money_project/LOGO_EasyMoney.jpg", width=300)
+    #st.sidebar.image("LOGO_EasyMoney.jpg", width=300)
 
     st.sidebar.write("Navegación")
     page = st.sidebar.radio("Ir a:", ["Actividad Comercial", "Data Annotation", "Model Training", "Model Tuning", "Data Extraction", "Settings"])
