@@ -18,7 +18,7 @@ if st.session_state.welcome:
     # Pantalla de bienvenida
     col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
-        st.image("../LOGO_EasyMoney.jpg ", width=700)
+        st.image("LOGO_EasyMoney.jpg", width=700)
         col1, col2, col3 = st.columns([1, 5, 1])
         with col2:
             st.title("Bienvenido a Easy Money")
