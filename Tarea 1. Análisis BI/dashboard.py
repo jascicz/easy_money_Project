@@ -31,9 +31,9 @@ else:
     st.sidebar.image("/Users/claudiacastro/easy_money_project/LOGO_EasyMoney.jpg", width=300)
 
     st.sidebar.title("Navegación")
-    page = st.sidebar.radio("Ir a:", ["Dashboard", "Data Annotation", "Model Training", "Model Tuning", "Data Extraction", "Settings"])
+    page = st.sidebar.radio("Ir a:", ["Actividad Comercial", "Data Annotation", "Model Training", "Model Tuning", "Data Extraction", "Settings"])
 
-    if page == "Dashboard":
+    if page == "Actividad Comercial":
         # Tarjetas de información al principio
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
