@@ -39,7 +39,7 @@ else:
 
     if page == "Actividad Comercial":
         
-        df_actividad_comercial = pd.read_parquet("/Users/claudiacastro/Desktop/commercial_activity_df_clean.parquet")
+        df_actividad_comercial = pd.read_parquet("https://easy-money-project-bucket.s3.eu-west-3.amazonaws.com/commercial_activity_df_clean.parquet")
         
         col1, col2, col3 = st.columns([3, 5, 1])
         with col2:
