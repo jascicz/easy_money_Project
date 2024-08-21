@@ -184,7 +184,7 @@ else:
         # Convertir el diccionario en un DataFrame para su análisis
         df_clientes_por_particion = pd.DataFrame(list(clientes_por_particion.items()), columns=['pk_partition', 'num_clientes'])
         # Crear el gráfico de barras
-        fig, ax = plt.subplots(figsize=(20, 10))
+        fig, ax = plt.subplots()
         ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color=color)
         ax.set_title('Clientes nuevos por partición con respecto a la anterior')
         ax.set_xlabel('pk_partition')
