@@ -146,7 +146,7 @@ else:
 
         st.pyplot(fig)
 
-    elif page == "Actividad Comercial":
+    elif:
         st.header("Data Page")
         st.write("Aquí se agrega contenido específico para cada Tarea.")
 
