@@ -149,7 +149,7 @@ else:
         
 
 
-    elif:
+    elif page != "Actividad Comercial":
         st.header("Data Page")
         st.write("Aquí se agrega contenido específico para cada Tarea.")
 
