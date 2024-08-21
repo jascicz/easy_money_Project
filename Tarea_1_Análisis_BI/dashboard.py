@@ -45,19 +45,57 @@ else:
             st.title("Actividad Comercial")
         st.write("---")
         # Tarjetas de información al principio
-        col1, col2, col3, col4, col5 = st.columns(5)
-        with col1:
-            st.metric(label="Documents", value="10.5K", delta="125")
-        with col2:
-            st.metric(label="Annotations", value="510", delta="-2", delta_color="inverse")
-        with col3:
-            st.metric(label="Accuracy", value="87.9%", delta="0.1%")
-        with col4:
-            st.metric(label="Training Time", value="1.5 hours", delta="10 mins", delta_color="inverse")
-        with col5:
-            st.metric(label="Processing Time", value="3 seconds", delta="-0.1 seconds")
+        #col1, col2, col3, col4, col5 = st.columns(5)
+        #with col1:
+        #    st.metric(label="Documents", value="10.5K", delta="125")
+        #with col2:
+        #    st.metric(label="Annotations", value="510", delta="-2", delta_color="inverse")
+        #with col3:
+        #    st.metric(label="Accuracy", value="87.9%", delta="0.1%")
+        #with col4:
+        #    st.metric(label="Training Time", value="1.5 hours", delta="10 mins", delta_color="inverse")
+        #with col5:
+        #    st.metric(label="Processing Time", value="3 seconds", delta="-0.1 seconds")
 
-        # Sección de extracción de datos
+
+         # Gráfico de donut con tonos verdes
+        
+        segment_distribution = df_actividad_comercial.groupby("segment")["pk_cid"].nunique().apply(lambda x: x / df_actividad_comercial["pk_cid"].nunique() * 100)
+        fig, ax = plt.subplots(figsize=(6, 6))
+        colors = plt.cm.Greens(np.linspace(0.3, 0.9, len(segment_distribution)))
+
+        # Crear el gráfico de pastel (donut)
+        wedges, texts, autotexts = ax.pie(segment_distribution, labels=segment_distribution.index, autopct='', 
+                                        colors=colors, startangle=140)
+
+        # Hacer el centro del gráfico de pastel vacío para crear el efecto de donut
+        centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+        fig.gca().add_artist(centre_circle)
+
+        # Añadir el valor total de clientes en el centro del gráfico
+        total_clients = df_actividad_comercial["pk_cid"].nunique()
+        ax.text(0, 0, f'{total_clients}', ha='center', va='center', fontsize=30, color='black', fontweight='bold', fontfamily='sans-serif')
+
+        # Ajustar el aspecto del gráfico y mostrarlo en Streamlit
+        ax.set_title('Distribución de segmentos de clientes')
+        ax.axis('equal')  # Asegurar que el gráfico es circular
+
+        # Colocar los valores de porcentaje fuera del gráfico
+        for i, a in enumerate(wedges):
+            ang = (a.theta2 - a.theta1) / 2. + a.theta1
+            x = np.cos(np.deg2rad(ang))
+            y = np.sin(np.deg2rad(ang))
+
+            horizontalalignment = {-1: "right", 1: "left"}[int(np.sign(x))]
+            connectionstyle = "angle,angleA=0,angleB={}".format(ang)
+
+            ax.annotate(f'{segment_distribution.iloc[i]:.2f}%', xy=(x, y), xytext=(1.35*np.sign(x), 1.4*y),
+                        horizontalalignment=horizontalalignment, 
+                        bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1),
+                        arrowprops=dict(arrowstyle="-", connectionstyle=connectionstyle))
+
+        st.pyplot(fig)
+
         
         # Contar la cantidad de clientes activos y no activos
         # Creando columnas
@@ -108,43 +146,8 @@ else:
         # Mostrar el gráfico en Streamlit
         st.plotly_chart(fig)
       
-        segment_distribution = df_actividad_comercial.groupby("segment")["pk_cid"].nunique().apply(lambda x: x / df_actividad_comercial["pk_cid"].nunique() * 100)
+        
 
-        # Crear el gráfico de donut con tonos verdes
-        fig, ax = plt.subplots(figsize=(10, 6))
-        colors = plt.cm.Greens(np.linspace(0.3, 0.9, len(segment_distribution)))
-
-        # Crear el gráfico de pastel (donut)
-        wedges, texts, autotexts = ax.pie(segment_distribution, labels=segment_distribution.index, autopct='', 
-                                        colors=colors, startangle=140)
-
-        # Hacer el centro del gráfico de pastel vacío para crear el efecto de donut
-        centre_circle = plt.Circle((0, 0), 0.70, fc='white')
-        fig.gca().add_artist(centre_circle)
-
-        # Añadir el valor total de clientes en el centro del gráfico
-        total_clients = df_actividad_comercial["pk_cid"].nunique()
-        ax.text(0, 0, f'{total_clients}', ha='center', va='center', fontsize=30, color='black', fontweight='bold', fontfamily='sans-serif')
-
-        # Ajustar el aspecto del gráfico y mostrarlo en Streamlit
-        ax.set_title('Distribución de segmentos de clientes')
-        ax.axis('equal')  # Asegurar que el gráfico es circular
-
-        # Colocar los valores de porcentaje fuera del gráfico
-        for i, a in enumerate(wedges):
-            ang = (a.theta2 - a.theta1) / 2. + a.theta1
-            x = np.cos(np.deg2rad(ang))
-            y = np.sin(np.deg2rad(ang))
-
-            horizontalalignment = {-1: "right", 1: "left"}[int(np.sign(x))]
-            connectionstyle = "angle,angleA=0,angleB={}".format(ang)
-
-            ax.annotate(f'{segment_distribution.iloc[i]:.2f}%', xy=(x, y), xytext=(1.35*np.sign(x), 1.4*y),
-                        horizontalalignment=horizontalalignment, 
-                        bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="black", lw=1),
-                        arrowprops=dict(arrowstyle="-", connectionstyle=connectionstyle))
-
-        st.pyplot(fig)
 
     elif:
         st.header("Data Page")
