@@ -190,7 +190,7 @@ else:
 
         # Crear el gráfico de barras
         fig, ax = plt.subplots(figsize=(20, 10))
-        ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color='skyblue')
+        ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color=color)
         ax.set_title('Clientes nuevos por partición con respecto a la anterior')
         ax.set_xlabel('pk_partition')
         ax.set_ylabel('num_clientes')
