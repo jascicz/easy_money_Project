@@ -27,6 +27,7 @@ if st.session_state.welcome:
     # Botón para acceder al dashboard
             if st.button("Acceder al Dashboard"):
                 st.session_state.welcome = False
+                st.experimental_rerun()
 else:
     
 
@@ -35,7 +36,9 @@ else:
     st.sidebar.image("https://easy-money-project-bucket.s3.eu-west-3.amazonaws.com/LOGO_EasyMoney.jpg", width=300)
 
     st.sidebar.write("Navegación")
-    page = st.sidebar.radio("Ir a:", ["Actividad Comercial", "Data Annotation", "Model Training", "Model Tuning", "Data Extraction", "Settings"])
+    page = st.sidebar.radio("Ir a:", ["Actividad Comercial", "Productos", "SocioDemográfico", 
+                                      "Segmentación", "Recomendación", "Personalización",
+                                     "Seguimiento", "Cooordinación"])
 
     if page == "Actividad Comercial":
         
@@ -147,8 +150,8 @@ else:
 
         st.pyplot(fig)
 
-    elif page == "Data Annotation":
-        st.header("Data Annotation Page")
-        st.write("Aquí podrías agregar contenido específico para la anotación de datos.")
+    elif page == "Actividad Comercial":
+        st.header("Data Page")
+        st.write("Aquí se agrega contenido específico para cada Tarea.")
 
     # Puedes seguir añadiendo más opciones para cada página seleccionada en la barra lateral
