@@ -183,19 +183,15 @@ else:
 
         # Convertir el diccionario en un DataFrame para su análisis
         df_clientes_por_particion = pd.DataFrame(list(clientes_por_particion.items()), columns=['pk_partition', 'num_clientes'])
-        # Crear el gráfico de barras
-        fig, ax = plt.subplots(figsize=(20, 10))
-        ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color=color)
-        ax.set_title('Clientes nuevos por partición con respecto a la anterior')
-        ax.set_xlabel('pk_partition')
-        ax.set_ylabel('num_clientes')
-
-        # Agregar etiquetas en cada barra
-        for i in range(len(df_clientes_por_particion)):
-            ax.text(i, df_clientes_por_particion['num_clientes'][i], df_clientes_por_particion['num_clientes'][i], ha='center', va='bottom')
+       
+    
+        # Crear un gráfico de barras interactivo con Plotly
+        fig = px.bar(df_clientes_por_particion, x='pk_partition', y='num_clientes', 
+                    labels={'pk_partition': 'Partition', 'num_clientes': 'Number of New Customers'}, 
+                    color_discrete_sequence=['#21918c'])
 
         # Mostrar el gráfico en Streamlit
-        st.pyplot(fig)
+        st.plotly_chart(fig)
 
 
     elif page != "Actividad Comercial":
