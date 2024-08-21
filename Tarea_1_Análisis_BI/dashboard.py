@@ -22,7 +22,7 @@ if st.session_state.page == "welcome":
     # Botón para acceder al dashboard
             if st.button("Acceder al Dashboard"):
                 st.session_state.page = "dashboard"
-                st.experimental_rerun()  # Forzar la recarga para mostrar el dashboard
+                st.experimental_set_query_params(page="dashboard")
 
 # Aquí sigue el código del dashboard o el contenido principal
 elif st.session_state.page == "dashboard":
