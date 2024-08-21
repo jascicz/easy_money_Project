@@ -27,7 +27,7 @@ if st.session_state.welcome:
     # Botón para acceder al dashboard
             if st.button("Acceder al Dashboard"):
                 st.session_state.welcome = False
-                st.experimental_rerun()
+                st.experimental_set_query_params(dummy_value=1)
 else:
     
 
