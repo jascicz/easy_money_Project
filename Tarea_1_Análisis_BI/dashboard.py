@@ -6,15 +6,10 @@ import seaborn as sns
 import pandas as pd
 import plotly.express as px
 
+if "page" not in st.session_state:
+    st.session_state.page = "welcome"
 
-# Configuración de la página de Streamlit
-st.set_page_config(page_title="Easy Money Dashboard", page_icon=":moneybag:", layout="wide")
-
-# Variable para el estado de la pantalla de bienvenida
-if "welcome" not in st.session_state:
-    st.session_state.welcome = True
-
-if st.session_state.welcome:
+if st.session_state.page == "welcome":
     # Pantalla de bienvenida
     col1, col2, col3 = st.columns([1, 3, 1])
     with col2:
@@ -26,10 +21,11 @@ if st.session_state.welcome:
     
     # Botón para acceder al dashboard
             if st.button("Acceder al Dashboard"):
-                st.session_state.welcome = False
-                st.stop()
-else:
-    
+                st.session_state.page = "dashboard"
+                st.experimental_rerun()  # Forzar la recarga para mostrar el dashboard
+
+# Aquí sigue el código del dashboard o el contenido principal
+elif st.session_state.page == "dashboard":
 
     # Barra lateral de navegación
     st.sidebar.title("DASHBOARD")
