@@ -57,7 +57,7 @@ else:
         #with col5:
         #    st.metric(label="Processing Time", value="3 seconds", delta="-0.1 seconds")
 
-
+        #---------------------------------------------------------------------------------------------------------------------
          # Gráfico de donut con tonos verdes
         col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
@@ -97,7 +97,7 @@ else:
 
             st.pyplot(fig)
 
-        
+        #---------------------------------------------------------------------------------------------------------------------
         # Contar la cantidad de clientes activos y no activos
         # Creando columnas
         col1, col2 = st.columns([1, 1])
@@ -136,6 +136,7 @@ else:
             st.pyplot(fig)
             
      
+        #---------------------------------------------------------------------------------------------------------------------
         
         st.subheader("Cantidad de clientes según la fecha en que se realizó la primera contratación")
         # Agrupar los datos por 'entry_date' y contar el número de clientes únicos por día
@@ -148,6 +149,58 @@ else:
         st.plotly_chart(fig)
       
         
+        #---------------------------------------------------------------------------------------------------------------------
+        
+        st.subheader("Cantidad de clientes nuevos por partición")
+
+        # Supongo que ca_df ya está cargado y contiene las columnas 'pk_partition' y 'pk_cid'
+
+        # Ordenar los datos por 'pk_partition' y 'pk_cid'
+        ca_df = df_actividad_comercial.sort_values(by=['pk_partition', 'pk_cid'])
+
+        # Obtener una lista única de particiones ordenadas
+        particiones = ca_df['pk_partition'].unique()
+
+        # Crear un diccionario para almacenar el número de clientes en la primera partición y los nuevos clientes por cada partición
+        clientes_por_particion = {}
+
+        # Mantener un conjunto de todos los clientes vistos hasta la partición actual
+        clientes_acumulados = set()
+
+        # Iterar sobre las particiones
+        for particion in particiones:
+            # Obtener los clientes de la partición actual
+            clientes_actuales = set(ca_df[ca_df['pk_partition'] == particion]['pk_cid'])
+            
+            # Identificar nuevos clientes en la partición actual excluyendo los ya vistos
+            nuevos_en_particion_actual = clientes_actuales - clientes_acumulados
+            
+            # Almacenar el número de nuevos clientes en el diccionario
+            clientes_por_particion[particion] = len(nuevos_en_particion_actual)
+            
+            # Actualizar el conjunto acumulado con los clientes actuales
+            clientes_acumulados.update(clientes_actuales)
+
+        # Convertir el diccionario en un DataFrame para su análisis
+        df_clientes_por_particion = pd.DataFrame(list(clientes_por_particion.items()), columns=['pk_partition', 'num_clientes'])
+
+        # Mostrar los resultados en Streamlit
+        st.write("Clientes nuevos por partición:")
+        st.dataframe(df_clientes_por_particion)
+
+        # Crear el gráfico de barras
+        fig, ax = plt.subplots(figsize=(20, 10))
+        ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color='skyblue')
+        ax.set_title('Clientes nuevos por partición con respecto a la anterior')
+        ax.set_xlabel('pk_partition')
+        ax.set_ylabel('num_clientes')
+
+        # Agregar etiquetas en cada barra
+        for i in range(len(df_clientes_por_particion)):
+            ax.text(i, df_clientes_por_particion['num_clientes'][i], df_clientes_por_particion['num_clientes'][i], ha='center', va='bottom')
+
+        # Mostrar el gráfico en Streamlit
+        st.pyplot(fig)
 
 
     elif page != "Actividad Comercial":
