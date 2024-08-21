@@ -183,11 +183,6 @@ else:
 
         # Convertir el diccionario en un DataFrame para su análisis
         df_clientes_por_particion = pd.DataFrame(list(clientes_por_particion.items()), columns=['pk_partition', 'num_clientes'])
-
-        # Mostrar los resultados en Streamlit
-        st.write("Clientes nuevos por partición:")
-        st.dataframe(df_clientes_por_particion)
-
         # Crear el gráfico de barras
         fig, ax = plt.subplots(figsize=(20, 10))
         ax.bar(df_clientes_por_particion['pk_partition'], df_clientes_por_particion['num_clientes'], color=color)
