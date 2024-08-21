@@ -24,7 +24,8 @@ if st.session_state.page == "welcome":
                 st.session_state.page = "dashboard"
 
 # Aquí sigue el código del dashboard o el contenido principal
-else: st.session_state.page == "dashboard"
+else: 
+    st.session_state.page == "dashboard"
 
     # Barra lateral de navegación
     st.sidebar.title("DASHBOARD")
