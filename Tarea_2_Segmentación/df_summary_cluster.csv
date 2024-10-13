@@ -1,0 +1,12 @@
+Nombre,Edad,Edad Media,Fecha de Ingreso,Antiguedad,Número de Productos Contratados,Número Medio de Productos,Actividad del Cliente,Clientes Activos (%),Canal de Entrada,Canal Secundario (%),"Uso de Cuentas, Ahorro e Inversión",Uso de Cuentas (%),Ahorro e Inversión (%),Financiación (%),Descripción Breve,Estrategias Clave
+0_Jóvenes de Baja Actividad,Jóvenes,25.868,Marzo 2016,Casi 3 años,Moderado,1.093,Media Baja,28.4,Muy Bajo uso de secundarios,7.9,Bajo,14.2,0.0,1.0,Jóvenes con baja actividad y pocos productos contratados.,- Programa de recompensas por uso activo para incentivar actividad.
+1_Nuevos Clientes de Bajo Compromiso,Mediana Edad,35.202,Marzo 2018,Un año,Bajo,0.485,Baja,16.6,Alto uso de secundarios,71.6,Bajo,3.8,0.3,0.8,Clientes recientes de mediana edad con bajo compromiso y actividad.,"- Ofertas personalizadas para aumentar contratación.
+- Mejora de canales digitales."
+2_Jóvenes Inactivos Sin Productos,Jóvenes,28.888,Agosto 2017,Casi de 2 años,Muy Bajo,0.039,Muy Baja,3.7,Bajo uso de secundarios,27.3,Muy Bajo,0.1,0.0,0.0,"Jóvenes inactivos sin productos, en riesgo de abandono.","- Reactivación con incentivos.
+- Encuestas para identificar barreras."
+3_Jóvenes Activos en Crecimiento,Jóvenes,23.277,Abril 2018,Un año,Moderado,1.08,Media,40.6,Bajo uso en secundarios,11.6,Medio Bajo,13.9,0.0,0.8,Jóvenes muy activos con potencial de crecimiento financiero.,"- Educación financiera.
+- Promociones adaptadas a jóvenes."
+4_Clientes Premium Altamente Comprometidos,Mediana Edad,37.405,Febrero 2017,Más de 2 años,Alto,3.871,Alta,94.5,Medio uso en secundarios,49.2,Alto,19.1,14.7,14.8,Clientes altamente comprometidos con múltiples productos y servicios complejos.,"- Programas de fidelización exclusivos.
+- Asesoría financiera personalizada."
+5_Seniors Comprometidos con Potencial,Mayores,49.626,Octubre 2017,Casi 2 años,Moderado,1.401,Media Alta,75.4,Alta uso en secundarios,70.8,Moderado,13.8,0.6,4.2,Clientes mayores activos con potencial para productos financieros más complejos.,"- Ofrecer productos financieros más complejos.
+- Eventos para fortalecer la relación."
