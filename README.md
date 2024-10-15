@@ -23,12 +23,12 @@ La tareas principales que debe desarrollar Bob son las siguientes:
 
 - **1. Análisis General** Se implementa un autoservicio de Business Intelligence(BI) para todo el equipo donde se pueda visualizar información relevante sobre el rendimiento de la empresa como por ejemplo cantidad de productos vendidos, qué clientes contratan más productos, cantidad de clientes nuevos, cuántos se han dado de baja, entre otros.
 
-- **2. Segmentación** 
+- **2. Segmentación** El objetivo de esta tarea es segmentar a los clientes en grupos distintos y homogéneos, con el fin de obtener un conocimiento más profundo de nuestra base de clientes enfocado principalmente en el comportamiento financiero de los clientes y así mejorar la estrategia comercial. Los resultados de esta segmentación se presentan con una descripción clara y visual de cada cluster, destacando las diferencias entre ellos.
 
-- **3. Recomendación** 
+- **3. Recomendación** Se implementa una estrategia de email marketing que se centra en promover la tarjeta de crédito, el producto más rentable de nuestra cartera, con un beneficio de 60€ por cada contratación, superando a las cuentas (10€) y productos de ahorro e inversión (40€). Al dirigir la campaña a 10,000 clientes, priorizamos el producto que genera mayor beneficio, aprovechando su popularidad en nuestra base de clientes para maximizar el rendimiento económico. Además, este análisis es replicable para otros productos, permitiendo su implementación en futuras campañas si se desea cambiar el enfoque.
 
-- **4. Personalización**
+- **4. Personalización** El objetivo de este análisis es segmentar a los 10,000 clientes anteriormente identificados para personalizar una campaña de email marketing, utilizando el algoritmo K-Nearest Neighbors (KNN) para agruparlos en 4 o 5 segmentos basados en características demográficas como edad, sexo e ingresos, y su probabilidad de compra. Esta segmentación permite crear perfiles específicos y personalizar las creatividades y mensajes de la campaña, mejorando la relevancia de la comunicación y maximizando las tasas de conversión en la venta de tarjetas de crédito.
 
 - **5. Seguimiento**
 
-- **6. Coordinación**
+- **6. Coordinación** El objetivo principal de esta tarea es establecer un proceso robusto de coordinación y validación de los cambios y mejoras que se implementen tanto en los modelos operativos como en el dashboard, a partir del desarrollo de un diagrama de Gantt que ilustra el cronograma de las tareas del proyecto desde julio hasta octubre, describiendo las tareas y sus respectivas fechas de inicio y duración. Esto garantiza la calidad y la alineación de los resultados con las expectativas de las partes interesadas.
