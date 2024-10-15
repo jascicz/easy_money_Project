@@ -25,7 +25,7 @@ La tareas principales que debe desarrollar Bob son las siguientes:
 
 - **2. Segmentación** El objetivo de esta tarea es segmentar a los clientes en grupos distintos y homogéneos, con el fin de obtener un conocimiento más profundo de nuestra base de clientes enfocado principalmente en el comportamiento financiero de los clientes y así mejorar la estrategia comercial. Los resultados de esta segmentación se presentan con una descripción clara y visual de cada cluster, destacando las diferencias entre ellos.
 
-- **3. Recomendación** 
+- **3. Recomendación** Se implementa una estrategia de email marketing que se centra en promover la tarjeta de crédito, el producto más rentable de nuestra cartera, con un beneficio de 60€ por cada contratación, superando a las cuentas (10€) y productos de ahorro e inversión (40€). Al dirigir la campaña a 10,000 clientes, priorizamos el producto que genera mayor beneficio, aprovechando su popularidad en nuestra base de clientes para maximizar el rendimiento económico. Además, este análisis es replicable para otros productos, permitiendo su implementación en futuras campañas si se desea cambiar el enfoque.
 
 - **4. Personalización**
 
