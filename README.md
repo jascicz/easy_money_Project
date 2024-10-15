@@ -31,4 +31,4 @@ La tareas principales que debe desarrollar Bob son las siguientes:
 
 - **5. Seguimiento**
 
-- **6. Coordinación**
+- **6. Coordinación** El objetivo principal de esta tarea es establecer un proceso robusto de coordinación y validación de los cambios y mejoras que se implementen tanto en los modelos operativos como en el dashboard, a partir del desarrollo de un diagrama de Gantt que ilustra el cronograma de las tareas del proyecto desde julio hasta octubre, describiendo las tareas y sus respectivas fechas de inicio y duración. Esto garantiza la calidad y la alineación de los resultados con las expectativas de las partes interesadas.
