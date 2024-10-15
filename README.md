@@ -23,7 +23,7 @@ La tareas principales que debe desarrollar Bob son las siguientes:
 
 - **1. Análisis General** Se implementa un autoservicio de Business Intelligence(BI) para todo el equipo donde se pueda visualizar información relevante sobre el rendimiento de la empresa como por ejemplo cantidad de productos vendidos, qué clientes contratan más productos, cantidad de clientes nuevos, cuántos se han dado de baja, entre otros.
 
-- **2. Segmentación** 
+- **2. Segmentación** El objetivo de esta tarea es segmentar a los clientes en grupos distintos y homogéneos, con el fin de obtener un conocimiento más profundo de nuestra base de clientes enfocado principalmente en el comportamiento financiero de los clientes y así mejorar la estrategia comercial. Los resultados de esta segmentación se presentan con una descripción clara y visual de cada cluster, destacando las diferencias entre ellos.
 
 - **3. Recomendación** 
 
